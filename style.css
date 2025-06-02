@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    background-color:#0ff8f8;
+    text-align: center;
+    color: #240046;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    /* background-color: #bfcde0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    height: 18.5vmin;
+    width: 18.5vmin;
+    background-color:#fefcfd;
+    border-radius: 1.3rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0,0,0.3);
+    font-size: 8vmin;
+    color: rgb(60, 34, 66)
+}
+
+.box:hover{
+    background-color: #eac2f1;
+}
+
+#reset{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #4f2c5f;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+
+}
+
+.player0{
+    height: 20vmin;
+    width: 35vmin;
+    background-color: #c9f8c9;
+    margin: 5rem;
+    font-size: 100%;
+    color: #240046;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid rgb(1, 29, 1);
+}
+
+.playerx{
+    height: 20vmin;
+    width: 35vmin;
+    background-color: #c9f8c9;
+    margin: 5rem;
+    font-size: 100%;
+    color: #240046;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid rgb(1, 29, 1);
+}
+
+.changeplayer{
+    background-color: #99f35c;
+    border: none;
+    box-shadow: 0 0 1.3rem rgba(0, 0,0,0.3);
+    font-size: 120%;
+}
+/* page 2 design */
+.page2{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+}
+.msg{
+    font-size: 3rem;
+}
+#new-game{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #4f2c5f;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+}
+
+.hide{
+    display: none;
+}

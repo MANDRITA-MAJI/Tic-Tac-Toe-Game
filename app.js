@@ -19,8 +19,7 @@ const winPattern =[
     [0,4,8],[2,4,6]
     ];
 
-
-let flag = 0;
+flag = 0;
 let moveCount = 0;
 
 player0.classList.add("changeplayer");
@@ -51,6 +50,11 @@ resetbtn.addEventListener("click",()=>{
         turn0 = true;
         box.disabled= false;
     })
+    turn0 = true;
+    flag = 0;           // Reset winner flag
+    moveCount = 0;      // Reset move counter
+    player0.classList.add("changeplayer");
+    playerx.classList.remove("changeplayer");
 })
 
 newGameBtn.addEventListener("click",()=>{
@@ -62,6 +66,11 @@ newGameBtn.addEventListener("click",()=>{
         turn0 = true;
         box.disabled= false;
     })
+    turn0 = true;
+    flag = 0;           // Reset winner flag
+    moveCount = 0;      // Reset move counter
+    player0.classList.add("changeplayer");
+    playerx.classList.remove("changeplayer");
 })
 
 const showWinner = (winner) =>{
@@ -85,7 +94,7 @@ const checkWinner = () => {
                 resetbtn.classList.add("hide");
                 winnerPage.style.display = "flex";
                 showWinner(pos1);
-                flag =1;
+                flag = 1;
                 return;
             }
         }
